@@ -1,0 +1,98 @@
+.property-update-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: #0b1020;
+    border: 2px solid #b8860b;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    color: #f5f5f5;
+    width: 800px;
+    margin: 1.5rem auto;
+    animation: fadeIn 600ms ease;
+}
+
+
+.property-update-form h2 {
+    text-align: center;
+    color: #ffd700;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 6px rgba(0,0,0,0.6);
+}
+
+/* Сообщение об ошибке */
+.error-message {
+    color: #ff4d4d;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+
+.property-update-form input,
+.property-update-form textarea,
+.property-update-form select {
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #b8860b;
+    background-color: #13294b;
+    color: #f5f5f5;
+    font-size: 1rem;
+    transition: border-color 300ms ease, box-shadow 300ms ease;
+    width: 100%;
+}
+
+
+.property-update-form input::placeholder,
+.property-update-form textarea::placeholder {
+    color: #9ca3af;
+}
+
+
+.property-update-form input:focus,
+.property-update-form textarea:focus,
+.property-update-form select:focus {
+    border-color: #ffd700;
+    outline: none;
+    box-shadow: 0 0 6px rgba(255,215,0,0.6);
+}
+
+
+.property-update-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+.delete-button {
+    max-height: 4rem;
+}
+
+.submit-button {
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #b8860b;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 200ms ease, transform 150ms ease;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: #ffd700;
+    transform: translateY(-2px);
+}
+
+.submit-button:active {
+    transform: scale(0.98);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}

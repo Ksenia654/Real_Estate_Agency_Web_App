@@ -1,0 +1,79 @@
+.news-detail {
+    background-color: #0b1020;
+    border: 2px solid #b8860b;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    color: #f5f5f5;
+    animation: fadeIn 600ms ease;
+}
+
+
+.news-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 6px rgba(0,0,0,0.6);
+}
+
+
+.news-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d1d5db;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+
+.news-image {
+    display: block;
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid #b8860b;
+    margin: 1rem auto;
+    box-shadow: 0 0 12px rgba(255,215,0,0.4);
+}
+
+
+.edit-delete {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+
+.delete-button {
+    background-color: #b8860b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 200ms ease, transform 150ms ease;
+}
+
+.delete-button:hover,
+.delete-button:focus {
+    background-color: #ff4d4d;
+    transform: translateY(-2px);
+}
+
+.delete-button:active {
+    transform: scale(0.98);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
